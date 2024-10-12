@@ -1,5 +1,6 @@
 /* From Uiverse.io by Spacious74 */ 
 .button {
+    transition: 200ms ease-in-out;
     cursor: pointer;
     font-size: 1.4rem;
     border-radius: 16px;
@@ -8,6 +9,12 @@
     background: radial-gradient(circle 80px at 80% -10%, #ffffff, #181b1b);
     position: relative;
   }
+  
+  .button:active{
+    transition: 200ms ease-in-out;
+    transform: translateY(10px);
+  }
+
   .button::after {
     content: "";
     position: absolute;
